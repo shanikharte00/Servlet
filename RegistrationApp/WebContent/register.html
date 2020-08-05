@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Application</title>
+</head>
+<body>
+	<form action="registerurl" method="post">
+		<table border="1" bgcolor="cyan">
+			<tr>
+				<td>Username::</td>
+				<td><Input type="text" name="pname" required /></td>
+			</tr>
+			<tr>
+				<td>Age::</td>
+				<td><Input type="password" name="page"></td>
+			</tr>
+			<tr>
+				<td>Gender::</td>
+				<td><Input type="radio" name="gender" value="M">Male&nbsp;&nbsp; 
+				<Input type="radio" name="gender" value="F">Female</td>
+			</tr>
+			<tr>
+				<td>Marital Status::</td>
+				<td><Input type="checkbox" name="ms" value="Married" /> Married
+			</tr>
+			<tr>
+				<td>DoB</td>
+				<td><Input type="date" name="dob"/></td>
+			</tr>
+			<tr>
+				<td>Qualification ::</td>
+				<td><select name="qlfy">
+						<option value="Engg">BE/B.TECH</option>
+						<option value="Medico">MBBS/BDS/MD</option>
+						<option value="Arts">BA/MA</option>
+						<option value="COMMERCE">B.COM/M.COM/CA</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>Joining Date ::</td>
+				<td><input type="datetime-local" name="Join" />
+			</tr>
+			<tr>
+				<td>Joining Week</td>
+				<td><input type="week" name="week" /></td>
+			</tr>
+			<tr>
+				<td>Today date</td>
+				<td><input type="date" name="dates" /></td>
+			</tr>
+			
+			
+			<tr>
+				<td>Courses ::</td>
+				<td><select name="crs" size="4" multiple>
+						<option value="cjava">Core Java</option>
+						<option value="Ajava">Advanced java</option>
+						<option value=".net"> .Net</option>
+						<option value="data"> Data structures</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>Mobile Number::</td>
+				<td><input type="tel" name="phone" pattern="[0-9]{10}"></td>
+			</tr>
+			<tr>
+				<td>Address</td>
+				<td><textarea name="address" row="15" column="10" placeholder="Enter address"></textarea></td>
+			</tr>
+			<tr>
+				<td>Percentages::</td>
+				<td><input type="range" id="points" min="0" max="100" onchange="textbox.value=points.value"/>Ina Range
+				<input type="text" name="textbox" id="textbox"/></td>
+			</tr>
+			<tr>
+				<td>Hobbies</td>
+				<td><input type="checkbox" name="hb" value="Roaming" />Traveling&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" name="hb" value="Reading" />Reading 
+					<input type="checkbox" name="hb" value="Playing" />Playing 
+					<input type="checkbox" name="hb" value="Listening" />Listening</td>
+			</tr>
+			<tr>
+				<td>Favcolor::</td>
+				<td><input type="color" name="fav" /></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="submit" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="reset" value="cancel" /></td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>

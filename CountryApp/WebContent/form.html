@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Servlet</title>
+
+</head>
+<body bgcolor="cyan">
+<h1 style="color:red;">Servlet to Javascript Communication</h1>
+<form name="frm" action="countryurl" method="post">
+	<select name="Country" onChange="send()">
+	<option value="">--select--</option>
+	<option value="0">India</option>
+	<option value="1">USA</option>
+	<option value="2">Pakistan</option>
+	<option value="3">Rasia</option>
+	</select>
+</form>
+
+<script language="Javascript" >
+	function send()	{
+		frm.submit();
+	}
+</script>
+</body>
+</html>

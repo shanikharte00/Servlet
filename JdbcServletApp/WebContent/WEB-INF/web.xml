@@ -1,0 +1,17 @@
+<web-app>
+
+<servlet>
+	<servlet-name>connect</servlet-name>
+	<servlet-class>com.sk.servlet.ServletJConnection</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>connect</servlet-name>
+	<url-pattern>/testurl</url-pattern>
+</servlet-mapping>	
+
+<welcome-file-list>
+	<welcome-file>page.html</welcome-file>
+</welcome-file-list>
+
+</web-app>

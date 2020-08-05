@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>LcTestApp</display-name>
+  
+  <servlet>
+  	<servlet-name>lc</servlet-name>
+ 	<servlet-class>com.sk.servlet.LcServlet</servlet-class>
+ 	<init-param>
+ 		<param-name>dbname</param-name>
+ 		<param-value>dbfriend</param-value>
+ 	</init-param>
+ 	
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>lc</servlet-name>
+  	<url-pattern>/l/abc.c</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>es</servlet-name>
+ 	<servlet-class>com.sk.servlet.ExcelServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>es</servlet-name>
+  	<url-pattern>/estest</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>ps</servlet-name>
+ 	<servlet-class>com.sk.servlet.PlainServlet</servlet-class>
+ 	</servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ps</servlet-name>
+  	<url-pattern>/pstest</url-pattern>
+ </servlet-mapping>
+ 
+  <servlet>
+  	<servlet-name>xs</servlet-name>
+ 	<servlet-class>com.sk.servlet.XmlServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>xs</servlet-name>
+  	<url-pattern>/xstest</url-pattern>
+  </servlet-mapping>
+   
+  <servlet>
+  	<servlet-name>hs</servlet-name>
+ 	<servlet-class>com.sk.servlet.HtmlServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>hs</servlet-name>
+  	<url-pattern>/hstest</url-pattern>
+  </servlet-mapping>
+   
+</web-app>

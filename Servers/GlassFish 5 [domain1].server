@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<server auto-publish-setting="1" glassfish.adminname="testuser" glassfish.adminpassword="testuser" glassfish.adminserverportnumber="4545" glassfish.domainpath="E:\glassfish\glassfish5\glassfish\domains\SKAJ" glassfish.serverportnumber="6677" hostname="localhost" id="GlassFish 5 [domain1]" name="GlassFish 5 [SKAJ]" runtime-id="GlassFish 5" server-type="glassfish.server" server-type-id="glassfish.server" start-timeout="240" stop-timeout="240" timestamp="120">
+  <list key="modules" value0="WAOne::org.eclipse.jst.jee.server:WAOne::jst.web::4.0" value1="WATwo::org.eclipse.jst.jee.server:WATwo::jst.web::4.0"/>
+</server>

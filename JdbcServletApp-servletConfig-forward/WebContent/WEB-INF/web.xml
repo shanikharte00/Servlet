@@ -1,0 +1,25 @@
+<web-app>
+	<!-- ServletContext is work outside that the reason servletContext is useful in one web application-->
+<welcome-file-list>
+	<welcome-file>page.html</welcome-file>
+</welcome-file-list>	
+	<servlet>
+	<servlet-name>connect</servlet-name>
+	<servlet-class>com.sk.servlet.ServletJConnection</servlet-class>	
+	</servlet>
+<servlet-mapping>
+	<servlet-name>connect</servlet-name>
+	<url-pattern>/testurl</url-pattern>
+</servlet-mapping>
+
+	<servlet>
+	<servlet-name>error</servlet-name>
+	<servlet-class>com.sk.servlet.ErrorServlet</servlet-class>	
+	</servlet>
+<servlet-mapping>
+	<servlet-name>error</servlet-name>
+	<url-pattern>/errorurl</url-pattern>
+</servlet-mapping>
+
+
+</web-app>

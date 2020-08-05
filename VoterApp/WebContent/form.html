@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+ <script type="text/javascript" src="validation.js"> 
+</script>
+<meta charset="ISO-8859-1">
+<title>Voter Application</title>
+</head>
+<body bgcolor="cyan">
+	<form action="voterurl" method="post" onsubmit="return validate(this)">
+	Name :: <input type="text" name="name" id="nameErr" required><br>
+	Age  :: <input type="text" name="age" id="ageErr"><br>
+	//take the hidden box 
+	<input type="hidden" value="no" name="vflag"/><br>
+	<input type="submit" value="Check age Eligiblity">
+	
+	</form>	
+</body>
+</html>
